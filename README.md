@@ -1,5 +1,5 @@
 
-# RAG with Gemini
+# RAG with GROQ
 This repository implements a Retrieval-Augmented Generation (RAG) question-answering system using Gemini, Google Generative AI, and LangChain. The application processes PDF documents, stores their embeddings in a vector database, retrieves relevant contexts, and uses an LLM to generate concise answers to user queries.
 
 ## Setup
