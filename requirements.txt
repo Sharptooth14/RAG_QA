@@ -1,9 +1,7 @@
 langchain
 langchain_community
-langchain-google-genai
 python-dotenv
 streamlit
-langchain_experimental
 sentence-transformers
 chromadb
 langchain_chroma
@@ -11,4 +9,5 @@ langchainhub
 pypdf
 rapidocr-onnxruntime
 langchain-groq
-sqlite3==3.45.3
+groq
+langchainhub
