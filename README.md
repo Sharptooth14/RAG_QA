@@ -18,6 +18,8 @@ Prerequisites:
 
         langchain-google-genai
 
+        sentence-transformer
+
         dotenv
 
         chromadb
@@ -25,8 +27,7 @@ Prerequisites:
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/Sharptooth14/QA_tool.git
-    cd rag-with-gemini
+    git clone https://github.com/Sharptooth14/RAG_QA.git
     ```
     
 2. Install dependencies:
@@ -36,7 +37,7 @@ Prerequisites:
 
 3. Create a .env file to store your API keys:
     ```bash
-    GOOGLE_API_KEY=your_google_api_key
+    GROQ_API_KEY=your_groq_api_key
     ```
 ## Run the application
 
@@ -93,7 +94,7 @@ docs = text_splitter.split_documents(all_docs)
 
 Embedding Creation
 ```
-gemini_embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 vectorstore = Chroma.from_documents(documents=docs, embedding=gemini_embeddings, persist_directory="chroma_db")
 ```
 
