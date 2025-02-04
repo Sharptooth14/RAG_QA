@@ -15,7 +15,6 @@ load_dotenv()
 st.set_page_config(page_title="RAG with Gemini", layout="wide")
 
 st.title("🔍 Question-answering system powered by a Language Model and RAG")
-st.markdown("This app answers your queries based on the provided documents. Type your query below!")
 
 # Load and process multiple PDFs
 pdf_files = ["yolov9_paper.pdf", "Python Machine Learning.pdf"]  # List of PDF file paths
